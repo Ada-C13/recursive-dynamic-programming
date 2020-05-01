@@ -32,6 +32,7 @@ describe "Fibonacci" do
     # Assert
     expect(answer).must_equal 1
   end 
+
   it "will return 3 for fib(4)" do
     # Act
     answer = fibonacci(4)
@@ -39,13 +40,15 @@ describe "Fibonacci" do
     # Assert
     expect(answer).must_equal 3
   end
+
   it "will return 5 for fib(5)" do
     # Act
-    answer = fibonacci(4)
+    answer = fibonacci(5)
 
     # Assert
-    expect(answer).must_equal 3
+    expect(answer).must_equal 5
   end
+
   it "will return 55 for fib(10)" do
     # Act
     answer = fibonacci(10)
