@@ -1,7 +1,10 @@
 # Improved Fibonacci
 
 # Time Complexity - O(n) => where n is the number of call stack
-# Space Complexity - O(n) => although I create an array, it is always the same constant size (array length is always 2)
+# Space Complexity - O(n) 
+# => although I create an array, it is always the same constant size (array length is always 2) => "O(1)" 
+# => O(1) + O(n) (the system stack) becomes O(n)
+
 # Hint, you may want a recursive helper method
 
 def fibonacci(n)
