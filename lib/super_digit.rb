@@ -1,7 +1,7 @@
 # Superdigit
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - o(n + m)
+# Space Complexity - o(1)
 
 def super_digit(num)
   return super_digit_helper(0, num)
@@ -25,33 +25,23 @@ def super_digit_helper(sum, num)
 end 
 
 
-# Time Complexity - ?
-# Space Complexity - ?
-# n.length = 4 -> 10000
-# n.length > 3 -> * 1000
-# n.length = 2 -> * 100 
-# n.length = 1 -> * 10 
+# Time Complexity - o(n) where n = k
+# Space Complexity -  o(1)
 
 def refined_super_digit(n, k)
-
   num = 0
   while k > 0 
-
-    if k == 3
-      num += (n*1000000)
-    elsif k == 2
-      num += (n*1000)
-
-    elsif k == 1
+    
+    if k > 1 
+      power = ((k+k) - 3) + k
+      num += (n * (10 ** power))
+    else
       num += n
-
-    elsif k == 4
-      num += (n*1000000000)
     end 
 
     k -= 1
   end 
   return super_digit_helper(0, num)
 end
-    
-puts refined_super_digit(148, 3)
+
+
