@@ -1,7 +1,7 @@
 # Improved Fibonacci
 
 # Time Complexity - ? O(n). 
-# Space Complexity - ?  O(1). I didn't create an array. Instead, I create constants to hold the second last and third last value
+# Space Complexity - ?  O(n) b/c stack frames add on to the call stack
 # Hint, you may want a recursive helper method
 def fibonacci(n)
   raise ArgumentError.new("Can'd take nagative number. INPUT: #{n} ") if n < 0
