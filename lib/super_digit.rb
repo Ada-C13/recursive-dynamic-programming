@@ -31,7 +31,6 @@ end
 # Space Complexity - ?
 def refined_super_digit(n, k)
   number = (n.to_s * k).to_i
-  p number
   super_digit(number)
 end
     
