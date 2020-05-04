@@ -3,10 +3,9 @@
 # Time Complexity - ?
 # Space Complexity - ?
 def super_digit(n)
-  return n if n < 10 # if the number has only one digit, return that number. this could be the base case of a recursive method
+  return n if n < 10 
   
-  # split the number up into its digits
-  # add each digit together and feed it back into the super_digit method
+  return super_digit(n.digits.sum) # can we use dynamic programming here?
 end
   
 
