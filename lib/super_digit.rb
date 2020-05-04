@@ -9,8 +9,8 @@ def super_digit(n)
 end
   
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - O(n)
+# Space Complexity - O(n^2)
 def refined_super_digit(n, k)
   return super_digit(n) if k == 1
 
