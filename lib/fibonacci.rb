@@ -1,7 +1,7 @@
 # Improved Fibonacci
 
-# Time Complexity - ?
-# Space Complexity - ?  (should be O(1))
+# Time Complexity - O(n)
+# Space Complexity - O(n)
 # Hint, you may want a recursive helper method
 def fibonacci(n)
     raise ArgumentError if n < 0 
