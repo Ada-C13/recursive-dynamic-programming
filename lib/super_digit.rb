@@ -1,6 +1,6 @@
 # Superdigit
 
-# Time Complexity - O(log 10 n) => where n is a digit (log 10 n) 
+# Time Complexity - O(log 10 n) => where n is a digit and since n is divided by 10 in every recursive call
 # Space Complexity - O(log 10 n) => because of the system stack
 def super_digit(n) 
   return super_helper(n)
@@ -17,8 +17,8 @@ def super_helper(n, sum = 0)
 end 
   
 
-# Time Complexity - O(log 10 n) => where n is "n * k" numbers of the call stack.
-# Space Complexity - O(log 10 n) => because of the system stack
+# Time Complexity - O(log 10 n) => where n is "n * k"
+# Space Complexity - O(log 10 n) => because of the hidden system stack
 def refined_super_digit(n, k)
   return super_digit(n * k)
 end
