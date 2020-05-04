@@ -24,13 +24,6 @@ def refined_super_digit(n, k)
   return n if string_n.size == 1
 
   repeat_n = string_n * k
-
-  i = 1
-  sum = repeat_n[0].to_i
-  while i < repeat_n.size
-    sum += repeat_n[i].to_i
-    i += 1
-  end
-  return super_digit(sum)
+  return super_digit(repeat_n)
 end
     
