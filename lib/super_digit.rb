@@ -11,6 +11,6 @@ end
 # Time Complexity - ?
 # Space Complexity - ?
 def refined_super_digit(n, k)
-  return (super_digit(n) * k)
+  return super_digit(n * k)
 end
     
