@@ -11,8 +11,8 @@ def super_digit(n)
 end
   
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - O(n2)
+# Space Complexity - O(2n)
 def refined_super_digit(n, k)
   nums = n.to_s.split('') * k
   
