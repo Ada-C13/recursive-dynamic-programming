@@ -23,7 +23,7 @@ end
 
 # Time Complexity - O(n), where n is the number of digits in n multipled by the var times
 # Space Complexity - O(n), where n is the number of digits in n multipled by the var times
-def refined_superdigit(num, times)
+def refined_super_digit(num, times)
   new_num = (num.to_s * times).to_i
   return super_digit(new_num)
 end
