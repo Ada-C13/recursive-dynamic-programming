@@ -11,7 +11,8 @@ end
 # Time Complexity - ?O(n + k)
 # Space Complexity - ? O(n)
 def refined_super_digit(n, k)
-  sum = n * k
+  sum = (n.to_s * k).to_i
+  p sum
   return super_digit(sum)
 end
     
