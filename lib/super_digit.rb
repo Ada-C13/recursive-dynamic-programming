@@ -21,7 +21,7 @@ end
 
 def refined_super_digit(n, k)
   string_n = n.to_s
-  return n if string_n.size == 1
+  return n if string_n.size == 1 && k == 1
 
   repeat_n = string_n * k
   return super_digit(repeat_n)
