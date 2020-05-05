@@ -20,6 +20,9 @@ end
 # Alternative helper to solve super_digit without using built-in ruby methods, for recursion practice.
 # Not sure how chaining .digits with .sum works under the hood so I can't determine if using this helper method would be more efficient.
 # A sum_all_digits helper using a loop instead of recursion would be even more efficient but not as fun!!!
+# Time complexity here: O(n), where n is the number of digits 
+# Space complexity: O(n), where n is the number of digits
+# so if I used sum_all_digits to help solve super_digit, it would change super_digit's complexity to O(n * m)? 
 def sum_all_digits(n)
   return n < 10 ? n : n%10 + sum_all_digits(n/10)
 end
