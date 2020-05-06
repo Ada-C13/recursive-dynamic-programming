@@ -1,6 +1,6 @@
 require_relative "test_helper"
 
-xdescribe "super_digit" do
+describe "super_digit" do
   it "will return 2 for super_digit(9875)" do
     # Act
     answer = super_digit(9875)
@@ -15,7 +15,7 @@ xdescribe "super_digit" do
 
     # Assert
     expect(answer).must_equal 5
-   end
+  end
 
   it "will return 6 for super_digit(123)" do
     # Act
@@ -33,13 +33,13 @@ xdescribe "super_digit" do
     expect(answer).must_equal 6
   end
 
-  describe "refined superdigit" do 
+  describe "refined superdigit" do
     it "will return 1 for n = 1 and k = 1" do
       # Act
       answer = refined_super_digit(1, 1)
 
       # Assert
-      expect(answer).must_equal 1      
+      expect(answer).must_equal 1
     end
 
     it "will return 8 for n=9875 and k = 4" do
@@ -51,11 +51,11 @@ xdescribe "super_digit" do
     end
 
     it "will return 3 for n=148 and k = 3" do
-        # Act
-        answer = refined_super_digit(148, 3)
-  
-        # Assert
-        expect(answer).must_equal 3
+      # Act
+      answer = refined_super_digit(148, 3)
+
+      # Assert
+      expect(answer).must_equal 3
     end
   end
 end
