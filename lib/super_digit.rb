@@ -9,11 +9,9 @@ def super_digit(n)
     return sum + n  # add sum + n
   else
     until n < 10
-      puts "sum #{sum}" #sum
-      puts "num #{n}" #n
-      puts "mod #{n % 10}" # mod of 10
-      puts "sum + mod #{sum += (n % 10)}" #add sum + mod
-      puts n /= 10 #divides n by 10
+      n % 10
+      sum += (n % 10)
+      n /= 10 #divides n by 10
     end
 
     sum += n # sum 0 + n 0
