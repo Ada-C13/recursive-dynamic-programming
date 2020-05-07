@@ -13,7 +13,7 @@ def super_helper(n, sum = 0)
   last_digit = n % 10  
   sum += (n / 10) + last_digit  
 
-  return super_digit(sum) 
+  return super_helper(sum)
 end 
   
 
